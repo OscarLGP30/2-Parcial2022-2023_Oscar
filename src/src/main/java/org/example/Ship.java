@@ -24,6 +24,12 @@ public class Ship {
         this.hits = 0;
     }
 
+    public Ship(Point start, Point end, int i) {
+        this.startPoint = start;
+        this.endPoint = end;
+        this.size = i;
+    }
+
     public Point getStartPoint() {
         return startPoint;
     }
