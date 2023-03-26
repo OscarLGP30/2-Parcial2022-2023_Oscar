@@ -1,0 +1,15 @@
+
+
+//¿Cuáles son las características de la programación orientada a objetos?\\
+
+La programación orientada a objetos es un paradigma de programación que se basa en el concepto de objetos,
+que son entidades que contienen datos en forma de campos, y código, en forma de procedimientos.
+Los objetos interactúan entre sí enviándose mensajes para que realicen tareas y se comuniquen entre sí.
+Los objetos pueden ser de cualquier tipo, como por ejemplo, un coche, una persona, un animal, un edificio, etc.
+
+Las caracteristicas de la programación orientada a objetos son:
+
+  * Encapsulación
+  * Abstracción
+  * Herencia
+  * Polimorfismo
