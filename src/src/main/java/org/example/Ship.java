@@ -44,7 +44,7 @@ public class Ship {
         return hits >= size;
     }
 
-    public void getShot(Point shotPoint) {
+    public boolean getShot(Point shotPoint) {
         if (direction == CardinalPoints.NORTH || direction == CardinalPoints.SOUTH) {
             if (shotPoint.getX() == startPoint.getX() && shotPoint.getY() >= startPoint.getY() && shotPoint.getY() <= endPoint.getY()) {
                 hits++;
@@ -54,6 +54,31 @@ public class Ship {
                 hits++;
             }
         }
+        return false;
+    }
+
+    public boolean isHit(Point point) {
+        if (direction == CardinalPoints.NORTH || direction == CardinalPoints.SOUTH) {
+            return point.getX() == startPoint.getX() && point.getY() >= startPoint.getY() && point.getY() <= endPoint.getY();
+        } else {
+            return point.getY() == startPoint.getY() && point.getX() >= startPoint.getX() && point.getX() <= endPoint.getX();
+        }
+    }
+
+    public Object getHits() {
+        return hits;
+    }
+
+    public int getLength() {
+        return size;
+    }
+
+    public void place() {
+
+    }
+
+    public void setBoard(Board board) {
+
     }
 }
 
