@@ -1,0 +1,24 @@
+
+
+//¿Qué es la visibilidad de una variable o un método? ¿Qué tipos hay? ¿Cuándo debe utilizarse cada tipo?\\
+
+//Visibilidad de una variable o un método\\
+
+La visibilidad de una variable o un método es la capacidad que tiene un objeto para acceder a dicha variable o método.
+
+//Tipos de visibilidad\\
+
+Hay 4 tipos de visibilidad:
+
+* Public: Puede ser accedido desde cualquier clase.
+* Protected: Puede ser accedido desde la clase que lo contiene y desde las clases que hereden de la clase que lo contiene.
+* Private: Sólo puede ser accedido desde la clase que lo contiene.
+* Package: Puede ser accedido desde la clase que lo contiene y desde las clases que se encuentren en el mismo paquete que la clase que lo contiene.
+
+//Cuándo utilizar cada tipo\\
+
+* Public: Cuando queremos que un método o una variable sea accesible desde cualquier clase.
+* Protected: Cuando queremos que un método o una variable sea accesible desde la clase que lo contiene y desde las clases que hereden de la clase que lo contiene.
+* Private: Cuando queremos que un método o una variable sea accesible sólo desde la clase que lo contiene.
+* Package: Cuando queremos que un método o una variable sea accesible desde la clase que lo contiene y desde las clases que se encuentren en el mismo paquete que la clase que lo contiene.
+
