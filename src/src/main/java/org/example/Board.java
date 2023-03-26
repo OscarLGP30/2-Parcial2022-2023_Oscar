@@ -18,6 +18,10 @@ public class Board {
         this.shots = new ArrayList<>();
     }
 
+    public Board() {
+        this(10, 10);
+    }
+
     public int getNumRows() {
         return numRows;
     }
@@ -73,5 +77,30 @@ public class Board {
             }
             System.out.println();
         }
+    }
+
+    public void getShot(Point shot1) {
+        shots.add(shot1);
+
+        if (isShipHit(shot1)) {
+            board[shot1.getX()][shot1.getY()] = 1;
+        } else {
+            board[shot1.getX()][shot1.getY()] = 2;
+        }
+
+        printBoard();
+
+        if (isAllShipsSunk()) {
+            System.out.println("You have sunk all the ships!");
+        }
+    }
+
+    public boolean allShipsSunk() {
+        for (Ship ship : ships) {
+            if (!ship.isSunk()) {
+                return false;
+            }
+        }
+        return true;
     }
 }
